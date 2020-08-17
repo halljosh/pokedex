@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'pokemon-red';
+    src: url(https://cdn.rawgit.com/shelune/pokedex-entry/master/pkm-red-font.ttf) format("truetype");
+}
+
+body {
+    background-image: url("pokeballs.jpg");
+    background-repeat: repeat;
+}
+
+.appheader {
+    border: 6px solid black;
+    box-shadow: inset 0 0 0 2px silver;
+    background: white;
+    max-width: 260px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.appheader h2 {
+    font-family: 'pokemon-red', sans-serif;
+    padding: 10px 0 10px 0;
+    margin: 0 10px 0 10px;
+}
+
+.psyduck {
+    margin-bottom: -10px;
+    padding-top: 10px;
+    max-width: 65px;
+}
+
+.pagecontainer {
+    padding: 20px;
+    display: block;
+    height: 120vh;
+    text-align: center;
+}
+
+.normal {
+    background: #decdb6;
+}
+
+.normal a {
+    background: white;
+    color: #decdb6;
+}
+
+.fire {
+    background: #f59718;
+}
+
+.fire a {
+    background: white;
+    color: #f59718;
+}
+
+.fighting {
+    background: #80000d;
+}
+
+.fighting a {
+    background: white;
+    color: #80000d;
+}
+
+.water {
+    background: #4359fa;
+}
+
+.water a {
+    background: white;
+    color: #4359fa;
+}
+
+.flying {
+    background: #c7ceff;
+}
+
+.flying a {
+    background: white;
+    color: #c7ceff;
+}
+
+.grass {
+    background: #51c979;
+}
+
+.grass a {
+    background: white;
+    color: #51c979;
+}
+
+.poison {
+    background: #812594;
+}
+
+.poison a {
+    background: white;
+    color: #812594;
+}
+
+.electric {
+    background: #ede900;
+}
+
+.electric a {
+    background: white;
+    color: #CCCC00;
+}
+
+.ground {
+    background: #8a7358;
+}
+
+.ground a {
+    background: white;
+    color: #8a7358;
+}
+
+.psychic {
+    background: #db4d7f;
+}
+
+.psychic a {
+    background: white;
+    color: #db4d7f;
+}
+
+.rock {
+    background: #b5aa88;
+}
+
+.rock a {
+    background: white;
+    color: #b5aa88;
+}
+
+.ice {
+    background: #bdfeff;
+}
+
+.ice a {
+    background: white;
+    color: #97cecf;
+}
+
+.bug {
+    background: #acc98d;
+}
+
+.bug a {
+    background: white;
+    color: #acc98d;
+}
+
+.ghost {
+    background: #a48dc9;
+}
+
+.ghost a {
+    background: white;
+    color: #a48dc9;
+}
+
+.dragon {
+    background: #5a2ea3;
+}
+
+.dragon a {
+    background: white;
+    color: #5a2ea3;
+}
+
+.dark {
+    background: #4f4e52;
+}
+
+.dark a {
+    background: white;
+    color: #4f4e52;
+    text-decoration: underline;
+}
+
+.steel {
+    background: #b8b8b8;
+}
+
+.steel a {
+    background: white;
+    color: gray;
+}
+
+.fairy {
+    background: #fba6ff;
+}
+
+.fairy a {
+    background: white;
+    color: #dd90e0;
+}
+
+.dexcard {
+    min-width: 85vw;
+    min-height: 30vh;
+    margin: 20px;
+    padding: 10px;
+    border: 6px solid black;
+    box-shadow: inset 0 0 0 2px silver;
+    background: white;
+}
+
+.dexrow {
+    display: flex;
+    padding: 30px;
+}
+
+.info {
+    flex: 40%;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.info h1 {
+    font-family: 'pokemon-red', monospace;
+    font-size: 24px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    font-family: 'pokemon-red', sans-serif;
+}
+
+.field h3 {
+    font-family: 'pokemon-red', sans-serif;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.search {
+    margin: 20px;
+    padding: 20px;
+    border: 6px solid black;
+    box-shadow: inset 0 0 0 2px silver;
+    background: white;
+}
+
+.spritebox {
+    position: relative;
+    margin: 0px 10px auto;
+    width: 200px;
+    height: 200px;
+}
+
+.whole {
+    text-align: center;
+}
+
+.spritebox img {
+    position: absolute;
+    left: 0;
+    flex: 60%;
+    min-width: 200px;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.sprite:hover {
+    opacity: 0;
+}
+
+.mobilecaption {
+    display: none;
+}
+
+figcaption {
+    font-family: 'courier-new', monospace;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.appfooter {
+    border: 6px solid black;
+    box-shadow: inset 0 0 0 2px silver;
+    background: white;
+    max-width: 92vw;
+    display: inline-block;
+    margin: 0px 20px 20px 20px;
+    padding: 10px;
+    font-family: 'courier-new', monospace;
+}
+
+.appfooter ul {
+    text-align: left;
+}
+
+.appfooter h4 {
+    font-family: 'courier-new', monospace;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .info h1 {
+        font-size: 20px;
+    }
+
+    .spritebox {
+        width: 180px;
+        margin-top: 15px;
+    }
+
+    .spritebox img {
+        min-width: 180px;
+    }
+
+    .webcaption {
+        display: none;
+    }
+
+    .mobilecaption {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .pagecontainer {
+        padding: 10px;
+    }
+
+    .info {
+        margin-left: 0px;
+    }
+
+    .dexrow {
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    .info h1 {
+        font-size: 18px;
+    }
+
+    .spritebox {
+        width: 150px;
+    }
+
+    .spritebox img {
+        min-width: 150px;
+        margin-left: -15px;
+    }
+
+    .field h3 {
+        font-size: 15px;
+    }
+
+    .search {
+        padding: 30px;
+    }
+}
